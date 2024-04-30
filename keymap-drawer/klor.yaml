@@ -114,9 +114,9 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - HOME
   - ESC
-  - {t: ▽, type: trans}
+  - HOME
   - {t: ▽, type: trans}
   - FUNCTION
   - {t: ▽, type: trans}
