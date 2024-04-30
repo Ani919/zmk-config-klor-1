@@ -157,7 +157,7 @@ layers:
   - F8
   - F9
   - F10
-  - {t: ▽, type: trans}
+  - OUT TOG
   - {t: ▽, type: trans}
   - F11
   - {t: ▽, type: trans}
@@ -171,7 +171,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F12
-  - {t: ▽, type: trans}
+  - EP TOG
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
