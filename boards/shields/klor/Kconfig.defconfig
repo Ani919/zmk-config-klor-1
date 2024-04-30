@@ -13,6 +13,9 @@ if SHIELD_KLOR_LEFT || SHIELD_KLOR_RIGHT
     config ZMK_SPLIT
         default y
 
+  CONFIG_ZMK_EXT_POWER
+        default y
+
 if ZMK_DISPLAY
 
     config I2C
