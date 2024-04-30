@@ -110,14 +110,14 @@ layers:
   - ^
   - '&'
   - '*'
-  - '['
-  - ']'
-  - CAPS
+  - (
+  - )
+  - BACKSPACE
   - {t: ▽, type: trans}
   - HOME
-  - ESC
   - END
-  - {t: ▽, type: trans}
+  - ESC
+  - F3
   - FUNCTION
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -126,7 +126,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - RSHIFT
-  - BACKSPACE
+  - CAPS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
