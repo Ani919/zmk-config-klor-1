@@ -91,17 +91,6 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   num:
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - CAPS
-  - BACKSPACE
-  - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
@@ -113,6 +102,17 @@ layers:
   - '9'
   - '0'
   - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - '['
+  - ']'
+  - CAPS
   - {t: ▽, type: trans}
   - HOME
   - ESC
@@ -126,7 +126,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - RSHIFT
-  - {t: ▽, type: trans}
+  - BACKSPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
