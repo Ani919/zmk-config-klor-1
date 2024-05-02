@@ -24,13 +24,13 @@ layers:
   - ;
   - ''''
   - LSHFT
-  - Z
+  - {t: Z, h: LGUI}
   - X
   - C
   - V
   - B
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - MUTE
+  - PLAY PAUSE
   - N
   - M
   - ','
@@ -41,7 +41,7 @@ layers:
   - LALT
   - {t: RET, h: num}
   - SPACE
-  - {t: DEL, h: LGUI}
+  - DEL
   - RET
   - {t: SPACE, h: sym}
   - BSPC
