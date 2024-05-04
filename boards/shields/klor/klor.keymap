@@ -29,6 +29,21 @@
         };
     };
 
+macros {
+        shHmF3: shHmF3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp HOME>
+                 , <&macro_release &kp LSHFT>
+                , <&macro_wait_time 340>
+               , <&macro_tap &kp F3>
+                ;
+        };
+    };
+
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -121,7 +136,7 @@ bindings = <
         RAK {
             display-name = "RMPTPT";
             bindings = <
-        &trans   &trans   &trans   &trans  &trans                              &trans  &trans  &trans  &trans  &soft_off
+        &trans   &trans   &shHmF3   &trans  &trans                              &trans  &trans  &trans  &trans  &soft_off
 &trans  &trans   &trans   &trans   &trans   &trans                             &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans   &trans   &trans    &trans      &trans       &trans    &trans  &trans    &trans  &trans  &trans  &trans
                           &trans   &trans   &trans      &trans       &trans       &trans        &trans        &trans
