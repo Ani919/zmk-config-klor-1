@@ -67,12 +67,12 @@ macros {
 conditional_layers {
         compatible = "zmk,conditional-layers";
         momentary_numpad {
-            if-layers = < LMO_N >;
-            then-layer = < L_NUM >;
+            if-layers = < 5 >;
+            then-layer = < 7 >;
         };
         toggle_numpad {
-            if-layers = < LTOGN >;
-            then-layer = < L_NUM >;
+            if-layers = < 6 >;
+            then-layer = < 7 >;
         };
     };
 
@@ -178,15 +178,15 @@ bindings = <
         };
 
  momentary_numpad {
-//          This layer only exists as a workaround to trigger the num layer through two mechanisms, &mo and &tog
+//          This layer only exists as a workaround to trigger the num layer through two mechanisms, &mo and &tog / &kt
 //          The real magic for it happens in conditional layers
-            bindings = < ___ >;
+            bindings = < &none >;
         };
 
         toggle_numpad {
-//          This layer only exists as a workaround to trigger the num layer through two mechanisms, &mo and &tog
+//          This layer only exists as a workaround to trigger the num layer through two mechanisms, &mo and &tog / &kt
 //          The real magic for it happens in conditional layers
-            bindings = < ___ >;
+            bindings = < &none >;
         };
 
         numpad {
