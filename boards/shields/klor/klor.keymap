@@ -165,7 +165,7 @@ bindings = <
             bindings = <
         &trans   &trans   &shHmF3   &trans  &trans                             &trans  &trans  &trans  &trans  &soft_off
 &trans  &trans   &trans   &trans   &trans   &trans                             &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans   &trans   &trans    &trans      &trans       &trans    &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &trans   &trans    &trans      &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans
                           &trans   &trans   &trans      &trans       &trans       &trans        &trans        &trans
             >;
 
@@ -177,10 +177,10 @@ bindings = <
 //          This layer only exists as a workaround to trigger the num layer through two mechanisms, &mo and &tog / &kt
 //          The real magic for it happens in conditional layers
             bindings = < 
-          &none   &none   &none    &none   &none                       &none     &none   &none    &none    &none  
+          &none   &none   &none    &none   &none                       &none     &none     &none   &none    &none  
 &none     &none   &none    &none    &none  &none                       &none     &none     &none   &none    &none    &none  
 &none     &none   &none    &none    &none  &none   &none     &none     &none     &none     &none   &none    &none    &none  
-                           &none    &none    &none  &none     &none   &none    &none    &none  
+                           &none    &none  &none   &none     &none     &none     &none     &none  
 >;
 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN>;
 
@@ -192,10 +192,10 @@ sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN>;
 //          The real magic for it happens in conditional layers
             bindings = < 
 
-        &none     &none   &none     &none  &none                       &none     &none   &none    &none    &none  
+          &none   &none    &none    &none  &none                       &none     &none     &none   &none    &none  
 &none     &none   &none    &none    &none  &none                       &none     &none     &none   &none    &none    &none  
 &none     &none   &none    &none    &none  &none   &none     &none     &none     &none     &none   &none    &none    &none  
-                           &none    &none    &none  &none     &none   &none    &none    &none  
+                           &none    &none  &none   &none     &none     &none     &none     &none  
 >;
 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN>;
 
@@ -204,11 +204,10 @@ sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN>;
         numpad {
             display-name = "numpad";
             bindings = <
-             &none     &none   &none    &none    &none                                  &kp N7  &kp N8  &kp N9 &kp MINUS &kp BSPC
-&tog 6       &none &kp LCTRL   &kp LALT &kp LCMD &kp RALT                               &kp COLON &kp N4  &kp N5  &kp N6 &kp PLUS  &kp STAR
-&kp LSHFT    &none     &none   &none    &none    &none   &trans               &trans    &kp COMMA &kp N1  &kp N2  &kp N3 &kp EQUAL &kp SLASH
-                            &kp LCTRL &kp LALT   &trans  &trans               &trans    &trans    &trans  &trans
-
+             &kp Tilde &none       &kp PG_UP  &kp PG_DN    &kp HOME                                  &kp N0    &kp N7  &kp N8  &kp N9 &kp MINUS
+&tog 6       &none     &kp LEFT    &kp UP     &kp RIGHT    &kp END                                  &kp COLON  &kp N4  &kp N5  &kp N6 &kp PLUS  &kp STAR
+&kp LSHFT    &kp LCMD  &none       &kp DOWN   &none        &none   &trans                 &trans    &kp COMMA  &kp N1  &kp N2  &kp N3 &kp EQUAL &kp SLASH
+                                  &kp LCTRL   &kp LALT     &trans  &trans                 &trans    &trans     &trans  &trans
             >;
 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
