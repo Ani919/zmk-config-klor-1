@@ -130,7 +130,7 @@ layers:
   - {t: RMPTPT, h: sticky}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - RET
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
