@@ -8,11 +8,6 @@
 #define LTOGN  6
 #define L_NUM  7
 
-// Make blank keys more inconspicuous
-#define X___X &trans
-#define ___ &none
-
-
 &lt { quick-tap-ms = <200>; };
 
 // keep it high until you're familiar with keyboard to avoid misclicks
@@ -67,12 +62,12 @@ macros {
 conditional_layers {
         compatible = "zmk,conditional-layers";
         momentary_numpad {
-            if-layers = < 5 >;
-            then-layer = < 7 >;
+            if-layers = <5>;
+            then-layer = <7>;
         };
         toggle_numpad {
-            if-layers = < 6 >;
-            then-layer = < 7 >;
+            if-layers = <6>;
+            then-layer = <7>;
         };
     };
 
@@ -81,9 +76,9 @@ conditional_layers {
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
- colemak {
+ qwerty {
 // ┌───────────────────────────────────────────────────────────┐
-display-name = "COLEMAK"                                       ;
+display-name = "QWERTY"                                       ;
 // └───────────────────────────────────────────────────────────┘
 /*           ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
              │    Q    │    W    │    E    │    R    │    T    │                    │    Y    │    U    │    I    │    O    │    P    │   
@@ -178,25 +173,36 @@ bindings = <
         };
 
  momentary_numpad {
+ display-name = "momNUM";
 //          This layer only exists as a workaround to trigger the num layer through two mechanisms, &mo and &tog / &kt
 //          The real magic for it happens in conditional layers
-            bindings = < &none >;
+            bindings = < 
+          &none   &none   &none    &none   &none                       &none     &none   &none    &none    &none  
+&none     &none   &none    &none    &none  &none                       &none     &none     &none   &none    &none    &none  
+&none     &none   &none    &none    &none  &none   &none     &none     &none     &none     &none   &none    &none    &none  
+                           &none    &none    &none  &none     &none   &none    &none    &none  
+>;
 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN>;
 
         };
 
         toggle_numpad {
+ display-name = "togNUM";
 //          This layer only exists as a workaround to trigger the num layer through two mechanisms, &mo and &tog / &kt
 //          The real magic for it happens in conditional layers
-            bindings = < &none >;
+            bindings = < 
+
+        &none     &none   &none     &none  &none                       &none     &none   &none    &none    &none  
+&none     &none   &none    &none    &none  &none                       &none     &none     &none   &none    &none    &none  
+&none     &none   &none    &none    &none  &none   &none     &none     &none     &none     &none   &none    &none    &none  
+                           &none    &none    &none  &none     &none   &none    &none    &none  
+>;
 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN>;
 
         };
 
         numpad {
-//                       ┏━━━━━━━━━━━━━━━━━━━━━━━━━┓
-            display-name = "numpad"                ;
-//                       ┗━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            display-name = "numpad";
             bindings = <
              &none     &none   &none    &none    &none                                  &kp N7  &kp N8  &kp N9 &kp MINUS &kp BSPC
 &tog 6       &none &kp LCTRL   &kp LALT &kp LCMD &kp RALT                               &kp COLON &kp N4  &kp N5  &kp N6 &kp PLUS  &kp STAR
