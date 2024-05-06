@@ -1,20 +1,20 @@
 layout: {qmk_keyboard: klor, qmk_layout: LAYOUT_polydactyl}
 layers:
   QWERTY:
-  - {t: Q, h: '!'}
-  - {t: W, h: '@'}
-  - {t: E, h: '#'}
-  - {t: R, h: $}
-  - {t: T, h: '%'}
+  - Q
+  - W
+  - E
+  - R
+  - T
   - Y
   - U
   - I
   - O
   - P
-  - TAB
+  - {t: TAB, h: spSYM}
   - A
-  - {t: S, h: '&'}
-  - {t: D, h: '*'}
+  - S
+  - D
   - F
   - G
   - H
@@ -354,6 +354,51 @@ layers:
   - /
   - LCTRL
   - LALT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  spSYM:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - HOME
+  - END
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
