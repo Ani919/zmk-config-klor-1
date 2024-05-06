@@ -366,9 +366,9 @@ layers:
   - F3
   - DEL
   - BSPC
-  - ''
-  - ''
-  - ''
+  - EP ON
+  - EP OFF
+  - EP TOG
   - ''
   - ''
   - {type: held}
@@ -377,9 +377,9 @@ layers:
   - '*'
   - (
   - )
-  - ''
-  - ''
-  - ''
+  - OUT BLE
+  - OUT USB
+  - OUT TOG
   - ''
   - ''
   - ''
