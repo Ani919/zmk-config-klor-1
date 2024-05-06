@@ -1,11 +1,11 @@
 layout: {qmk_keyboard: klor, qmk_layout: LAYOUT_polydactyl}
 layers:
   QWERTY:
-  - Q
-  - W
-  - E
-  - R
-  - T
+  - {t: Q, h: '!'}
+  - {t: W, h: '@'}
+  - {t: E, h: '#'}
+  - {t: R, h: $}
+  - {t: T, h: '%'}
   - Y
   - U
   - I
@@ -13,8 +13,8 @@ layers:
   - P
   - TAB
   - A
-  - '&s_or_amp'
-  - D
+  - {t: S, h: '&'}
+  - {t: D, h: '*'}
   - F
   - G
   - H
@@ -82,7 +82,7 @@ layers:
   - {t: ▽, type: trans}
   - RSHIFT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LCTRL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -172,7 +172,7 @@ layers:
   - {t: ▽, type: trans}
   - F12
   - EP TOG
-  - {t: ▽, type: trans}
+  - LCTRL
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
