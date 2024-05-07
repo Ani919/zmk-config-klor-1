@@ -232,7 +232,7 @@ bindings = <
           &none   &none    &none    &none  &none                                  &none     &none     &none   &none    &none  
 &none     &none   &none    &none    &none  &none                                  &none     &none     &none   &none    &none    &none  
 &none     &none   &none    &none    &none  &mt QMARK FSLH   &trans     &trans     &none     &none     &none   &none    &none    &none  
-                           &none    &none  &trans           &trans     &trans     &trans    &trans    &trans  
+                        &kp LCTRL   &none  &trans           &trans     &trans     &trans    &trans    &trans  
         >;
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
