@@ -27,7 +27,7 @@ layers:
   - {t: Z, h: LGUI}
   - X
   - C
-  - V
+  - {t: V, h: Cmnt}
   - B
   - MUTE
   - PLAY PAUSE
@@ -39,8 +39,8 @@ layers:
   - \
   - {t: ESC, h: LCTRL}
   - LALT
-  - {t: SPACE, h: num}
-  - {t: /, h: '?'}
+  - num
+  - SPACE
   - RET
   - {t: SPACE, h: sym}
   - DEL
@@ -157,7 +157,7 @@ layers:
   - F8
   - F9
   - F10
-  - OUT TOG
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F11
   - {t: ▽, type: trans}
@@ -171,7 +171,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F12
-  - EP TOG
+  - {t: ▽, type: trans}
   - LCTRL
   - {t: ▽, type: trans}
   - {type: held}
@@ -188,9 +188,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - '&soft_off'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -389,6 +389,51 @@ layers:
   - +
   - ':'
   - _
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Cmnt:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {t: /, h: '?'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
