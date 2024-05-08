@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: klor, qmk_layout: LAYOUT_polydactyl}
 layers:
   QWERTY:
-  - Q
+  - {t: Q, h: Cmnt}
   - W
   - E
   - R
@@ -27,7 +27,7 @@ layers:
   - {t: Z, h: LGUI}
   - X
   - C
-  - {t: V, h: '9'}
+  - V
   - B
   - MUTE
   - PLAY PAUSE
@@ -37,12 +37,12 @@ layers:
   - .
   - {t: /, h: RSHIFT}
   - \
-  - {t: ESC, h: LCTRL}
+  - LCTRL
   - LALT
   - num
   - SPACE
   - RET
-  - {t: SPACE, h: sym}
+  - sym
   - DEL
   - BSPC
   sym:
@@ -363,7 +363,7 @@ layers:
   spSYM:
   - HOME
   - END
-  - F3
+  - ESC
   - DEL
   - BSPC
   - EP ON
@@ -406,43 +406,43 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Cmnt:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: /, h: '?'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {type: held}
   - LCTRL
+  - {t: /, h: '?'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
