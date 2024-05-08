@@ -46,11 +46,11 @@ layers:
   - DEL
   - BSPC
   sym:
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - '`'
   - {t: ▽, type: trans}
   - PG UP
@@ -117,7 +117,7 @@ layers:
   - HOME
   - END
   - ESC
-  - F3
+  - _
   - FUNCTION
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -383,12 +383,12 @@ layers:
   - ''
   - ''
   - ''
-  - ''
   - '='
+  - ''
   - '-'
   - +
   - ':'
-  - _
+  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
