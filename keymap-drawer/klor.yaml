@@ -27,7 +27,7 @@ layers:
   - {t: Z, h: LGUI}
   - X
   - C
-  - {t: V, h: Cmnt}
+  - {t: V, h: '9'}
   - B
   - MUTE
   - PLAY PAUSE
@@ -432,7 +432,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
   - {t: /, h: '?'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
