@@ -14,9 +14,9 @@
 
 // keep it high until you're familiar with keyboard to avoid misclicks
 // later lower it to <= 200
-&mt {
-    tapping-term-ms = <300>;
-};
+// &mt {
+//    tapping-term-ms = <300>;
+//};
 
 &sl {
     release-after-ms = <2000>;
