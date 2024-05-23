@@ -62,10 +62,8 @@ layers:
   - )
   - '}'
   - ''
-  - ^
-  - '&mt_home 0 LEFT'
-  - {t: UP, h: Ctl+ HOME}
-  - '&mt_end 0 RIGHT'
+  - CARET LEFT
+  - '&mt LC(HOME) UP RIGHT'
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -87,9 +85,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - RET
   - {t: ▽, type: trans}
+  - RET
+  - {type: held}
   num:
   - '1'
   - '2'
