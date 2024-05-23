@@ -56,8 +56,6 @@
         bindings = <BINDING>, <BINDING>; \
         mods = <MODS>; \
     )
-MASK_MODS(masked_home, (MOD_LCTL), &kp HOME)
-MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 
 
 
@@ -73,6 +71,9 @@ ZMK_COMBO(paste, &kp LC(V), 13 14)
 
 ZMK_HOLD_TAP(mt_home, bindings = <&masked_home>, <&kp>; MT_CORE)
 ZMK_HOLD_TAP(mt_end, bindings = <&masked_end>, <&kp>; MT_CORE)
+
+MASK_MODS(masked_home, (MOD_LCTL), &kp HOME)
+MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 
     behaviors {
         s_or_amp: tap_dance_0 {
