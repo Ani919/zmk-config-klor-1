@@ -63,9 +63,9 @@ layers:
   - '}'
   - ''
   - ^
-  - '&mttt_home 0 LEFT'
-  - '&mttt LC(HOME) UP'
-  - '&mttt_end 0 RIGHT'
+  - '&mt_home 0 LEFT'
+  - {t: UP, h: Ctl+ HOME}
+  - '&mt_end 0 RIGHT'
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -78,7 +78,7 @@ layers:
   - {t: ▽, type: trans}
   - '~'
   - ''
-  - '&mttt LC(END) DOWN'
+  - {t: DOWN, h: Ctl+ END}
   - ''
   - ''
   - {t: ▽, type: trans}

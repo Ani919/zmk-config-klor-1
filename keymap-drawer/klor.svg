@@ -382,22 +382,20 @@ path.combo {
 <g transform="translate(693, 110)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 70%">&amp;mttt_home</tspan><tspan x="0" dy="1.2em" style="font-size: 70%">0</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 70%">LEFT</tspan>
+<tspan x="0" dy="-1.2em" style="font-size: 88%">&amp;mt_home</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">0</tspan>
+<tspan x="0" dy="1.2em" style="font-size: 88%">LEFT</tspan>
 </text>
 </g>
 <g transform="translate(749, 84)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 88%">&amp;mttt</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">LC(HOME)</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 88%">UP</tspan>
-</text>
+<text x="0" y="0" class="key tap">UP</text>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 78%">Ctl+ HOME</tspan></text>
 </g>
 <g transform="translate(809, 115) rotate(4.0)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 78%">&amp;mttt_end</tspan><tspan x="0" dy="1.2em" style="font-size: 78%">0</tspan>
-<tspan x="0" dy="1.2em" style="font-size: 78%">RIGHT</tspan>
+<tspan x="0" dy="-1.2em">&amp;mt_end</tspan><tspan x="0" dy="1.2em">0</tspan>
+<tspan x="0" dy="1.2em">RIGHT</tspan>
 </text>
 </g>
 <g transform="translate(868, 157) rotate(10.0)" class="key keypos-20">
@@ -447,10 +445,8 @@ path.combo {
 </g>
 <g transform="translate(749, 140)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;mttt</tspan><tspan x="0" dy="1.2em">LC(END)</tspan>
-<tspan x="0" dy="1.2em">DOWN</tspan>
-</text>
+<text x="0" y="0" class="key tap">DOWN</text>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 88%">Ctl+ END</tspan></text>
 </g>
 <g transform="translate(805, 171) rotate(4.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
