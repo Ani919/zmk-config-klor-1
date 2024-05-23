@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#include "zmk-helpers/helper.h"
+#include "helperRAK.h"
 
 #define LMO_N  5
 #define LTOGN  6
