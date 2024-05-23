@@ -33,7 +33,7 @@ layers:
   - PLAY PAUSE
   - {t: N, h: momentary_numpad}
   - M
-  - ','
+  - {t: ., h: ','}
   - .
   - {t: /, h: RSHIFT}
   - \
@@ -43,7 +43,7 @@ layers:
   - SPACE
   - BSPC
   - sym
-  - RET
+  - {t: RET, h: '?'}
   - DEL
   sym:
   - ''
@@ -63,9 +63,9 @@ layers:
   - '}'
   - ''
   - ^
-  - LEFT
-  - UP
-  - RIGHT
+  - '&mttt_home 0 LEFT'
+  - '&mttt LC(HOME) UP'
+  - '&mttt_end 0 RIGHT'
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -78,7 +78,7 @@ layers:
   - {t: ▽, type: trans}
   - '~'
   - ''
-  - DOWN
+  - '&mttt LC(END) DOWN'
   - ''
   - ''
   - {t: ▽, type: trans}
@@ -88,7 +88,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - RET
   - {t: ▽, type: trans}
   num:
   - '1'
@@ -161,8 +161,8 @@ layers:
   - {t: ▽, type: trans}
   - F11
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - BT CLR
+  - ''
   - {type: held}
   - '&sys_reset'
   - '&bootloader'
@@ -181,44 +181,44 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   rak:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - '&shHmF3'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
   - '&soft_off'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&CshHmF3'
+  - '&CshEF3'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
+  - ''
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
