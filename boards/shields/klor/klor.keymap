@@ -29,6 +29,10 @@
 // combos
 #undef COMBO_TERM
 #define COMBO_TERM 50
+ZMK_COMBO(esc,  &kp ESC, 0 1, ALL, 25)
+
+ZMK_COMBO(copy,  &kp LC(C), 12 13)
+ZMK_COMBO(paste, &kp LC(V), 13 14)
 
 
 /* Nav cluster */
@@ -40,6 +44,23 @@
     quick-tap-ms = <220>; \
     hold-trigger-key-positions = <0>;
 
+// mask CTRL when holding left/right to avoid accidental jumps to beginning/end of document
+#define MASK_MODS(NAME, MODS, BINDING) \
+    ZMK_MOD_MORPH(NAME, \
+        bindings = <BINDING>, <BINDING>; \
+        mods = <MODS>; \
+    )
+
+MASK_MODS(masked_home, (MOD_LCTL), &kp HOME)
+
+MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
+
+
+ZMK_HOLD_TAP(mt_home, bindings = <&masked_home>, <&kp>; MT_CORE)
+
+ZMK_HOLD_TAP(mt_end, bindings = <&masked_end>, <&kp>; MT_CORE)
+
+
 &mt { MT_CORE };
 
 #define NAV_LEFT  &mt_home 0   LEFT    // tap: left  | long-tap: beginning of line
@@ -50,23 +71,7 @@
 #define NAV_DEL   &mt LC(DEL)  DEL     // tap: del   | long-tap: delete word forward
 
 
-// mask CTRL when holding left/right to avoid accidental jumps to beginning/end of document
-#define MASK_MODS(NAME, MODS, BINDING) \
-    ZMK_MOD_MORPH(NAME, \
-        bindings = <BINDING>, <BINDING>; \
-        mods = <MODS>; \
-    )
 
-ZMK_COMBO(esc,  &kp ESC, 0 1, ALL, 25)
-
-ZMK_COMBO(copy,  &kp LC(C), 12 13)
-ZMK_COMBO(paste, &kp LC(V), 13 14)
-
-ZMK_HOLD_TAP(mt_home, bindings = <&masked_home>, <&kp>; MT_CORE)
-ZMK_HOLD_TAP(mt_end, bindings = <&masked_end>, <&kp>; MT_CORE)
-
-MASK_MODS(masked_home, (MOD_LCTL), &kp HOME)
-MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 
 // DO NOT MAKE LAYER LABELS LARGER
 
