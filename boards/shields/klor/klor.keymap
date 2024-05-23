@@ -57,17 +57,10 @@
         mods = <MODS>; \
     )
 
-
-
-// DO NOT MAKE LAYER LABELS LARGER
-
-/ {
-
 ZMK_COMBO(esc,  &kp ESC, 0 1, ALL, 25)
 
 ZMK_COMBO(copy,  &kp LC(C), 12 13)
 ZMK_COMBO(paste, &kp LC(V), 13 14)
-
 
 ZMK_HOLD_TAP(mt_home, bindings = <&masked_home>, <&kp>; MT_CORE)
 ZMK_HOLD_TAP(mt_end, bindings = <&masked_end>, <&kp>; MT_CORE)
@@ -75,7 +68,11 @@ ZMK_HOLD_TAP(mt_end, bindings = <&masked_end>, <&kp>; MT_CORE)
 MASK_MODS(masked_home, (MOD_LCTL), &kp HOME)
 MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 
-    behaviors {
+// DO NOT MAKE LAYER LABELS LARGER
+
+/ {
+
+behaviors {
         s_or_amp: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
