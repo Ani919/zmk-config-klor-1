@@ -35,8 +35,8 @@ ZMK_COMBO(esc,  &kp ESC, 0 1, ALL, 25)
 ZMK_COMBO(copy,  &kp LC(C), 12 13)
 ZMK_COMBO(paste, &kp LC(V), 13 14)
 
-#define NAV_LEFT     LEFT    // tap: left  | long-tap: beginning of line
-#define NAV_RIGHT     RIGHT   // tap: right | long-tap: end       of line
+#define NAV_LEFT  &mt LC(LEFT)   LEFT    // tap: left  | long-tap: beginning of line
+#define NAV_RIGHT &mt LC(RIGHT)    RIGHT   // tap: right | long-tap: end       of line
 #define NAV_UP    &mt LC(HOME) UP      // tap: up    | long-tap: beginning of document
 #define NAV_DOWN  &mt LC(END)  DOWN    // tap: down  | long-tap: end       of document
 #define NAV_BSPC  &mt LC(BSPC) BSPC    // tap: bspc  | long-tap: delete word backward
@@ -61,7 +61,7 @@ behaviors {
             bindings = <&kp SLASH>, <&kp BACKSLASH>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
+};
 macros {
         shHmF3: shHmF3 {
             compatible = "zmk,behavior-macro";
