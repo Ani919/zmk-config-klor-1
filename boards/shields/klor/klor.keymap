@@ -30,10 +30,6 @@
 #undef COMBO_TERM
 #define COMBO_TERM 50
 
-ZMK_COMBO(esc,  &kp ESC, 0 1, ALL, 25)
-
-ZMK_COMBO(copy,  &kp LC(C), 12 13)
-ZMK_COMBO(paste, &kp LC(V), 13 14)
 
 /* Nav cluster */
 
@@ -45,8 +41,6 @@ ZMK_COMBO(paste, &kp LC(V), 13 14)
     hold-trigger-key-positions = <0>;
 
 &mt { MT_CORE };
-ZMK_HOLD_TAP(mt_home, bindings = <&masked_home>, <&kp>; MT_CORE)
-ZMK_HOLD_TAP(mt_end, bindings = <&masked_end>, <&kp>; MT_CORE)
 
 #define NAV_LEFT  &mt_home 0   LEFT    // tap: left  | long-tap: beginning of line
 #define NAV_RIGHT &mt_end 0    RIGHT   // tap: right | long-tap: end       of line
@@ -70,6 +64,15 @@ MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 // DO NOT MAKE LAYER LABELS LARGER
 
 / {
+
+ZMK_COMBO(esc,  &kp ESC, 0 1, ALL, 25)
+
+ZMK_COMBO(copy,  &kp LC(C), 12 13)
+ZMK_COMBO(paste, &kp LC(V), 13 14)
+
+
+ZMK_HOLD_TAP(mt_home, bindings = <&masked_home>, <&kp>; MT_CORE)
+ZMK_HOLD_TAP(mt_end, bindings = <&masked_end>, <&kp>; MT_CORE)
 
     behaviors {
         s_or_amp: tap_dance_0 {
