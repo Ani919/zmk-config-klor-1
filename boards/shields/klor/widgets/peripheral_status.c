@@ -17,7 +17,7 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 #include "peripheral_status.h"
 
-LV_IMG_DECLARE(batman_logo);
+LV_IMG_DECLARE(vikramguns);
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
