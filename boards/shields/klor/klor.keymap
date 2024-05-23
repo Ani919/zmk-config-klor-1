@@ -26,10 +26,7 @@
     hold-time-ms = <1500>; // Only turn off it the key is held for 5 seconds or longer.
 };
 
-
-
 // combos
-
 #undef COMBO_TERM
 #define COMBO_TERM 50
 
@@ -37,7 +34,6 @@ ZMK_COMBO(esc,  &kp ESC, 0 1, ALL, 25)
 
 ZMK_COMBO(copy,  &kp LC(C), 12 13)
 ZMK_COMBO(paste, &kp LC(V), 13 14)
-
 
 /* Nav cluster */
 
