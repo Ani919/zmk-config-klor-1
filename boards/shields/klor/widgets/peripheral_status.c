@@ -117,7 +117,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
 
     // batman logo
     lv_obj_t *logo = lv_img_create(widget->obj);
-    lv_img_set_src(logo, &batman_logo);
+    lv_img_set_src(logo, &vikram_guns);
     lv_obj_align(logo, LV_ALIGN_BOTTOM_MID, 0, 0);
 
     sys_slist_append(&widgets, &widget->node);
