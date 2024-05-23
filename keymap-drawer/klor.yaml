@@ -450,3 +450,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [0, 1]
+  k: ESC
+- p: [12, 13]
+  k: Ctl+ C
+- p: [13, 14]
+  k: Ctl+ V
