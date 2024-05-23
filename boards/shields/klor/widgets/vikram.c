@@ -21,7 +21,7 @@
 #define LV_ATTRIBUTE_IMG_FOR 60 PIX HEIGHT VIKRAM GUNS
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_FOR 60 PIX HEIGHT VIKRAM GUNS uint8_t for 60 pix height vikram guns_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_FOR 60 PIX HEIGHT VIKRAM GUNS uint8_t for 60 pix heguns_map[] = {
     0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a, 0x00, 0x00, 0x00, 0x0d, 0x49, 
     0x48, 0x44, 0x52, 0x00, 0x00, 0x00, 0x42, 0x00, 0x00, 0x00, 0x41, 0x08, 0x02, 
     0x00, 0x00, 0x00, 0xea, 0xa2, 0xe5, 0x11, 0x00, 0x00, 0x00, 0x89, 0x7a, 0x54, 
@@ -895,12 +895,43 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_FOR 60 PI
     0x45, 0x4e, 0x44, 0xae, 0x42, 0x60, 0x82
 };
 
-const lv_img_dsc_t for 60 pix height vikram guns = {
-  .header.cf = LV_IMG_CF_RAW_CHROMA_KEYED,
+const lv_img_dsc_t vikramguns = {
+  .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 66,
   .header.h = 65,
   .data_size = 11317,
-  .data = for 60 pix height vikram guns_map,
+  .data = guns_map,
+};
+
+
+    #include <lvgl.h>
+
+#ifndef LV_ATTRIBUTE_MEM_ALIGN
+#define LV_ATTRIBUTE_MEM_ALIGN
+#endif
+
+#ifndef LV_ATTRIBUTE_IMG_BATMAN_LOGO
+#define LV_ATTRIBUTE_IMG_BATMAN_LOGO
+#endif
+
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_BATMAN_LOGO uint8_t
+    batman_logo_map[] = {
+        0x07, 0x07, 0x07, 0xff, /*Color of index 0*/
+        0xeb, 0xf2, 0xea, 0xff, /*Color of index 1*/
+
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+       
+        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+};
+
+const lv_img_dsc_t batman_logo = {
+    .header.cf = LV_IMG_CF_INDEXED_1BIT,
+    .header.always_zero = 0,
+    .header.reserved = 0,
+    .header.w = 120,
+    .header.h = 45,
+    .data_size = 683,
+    .data = batman_logo_map,
 };
