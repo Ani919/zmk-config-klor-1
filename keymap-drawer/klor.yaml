@@ -31,7 +31,7 @@ layers:
   - B
   - MUTE
   - PLAY PAUSE
-  - {t: N, h: momNUM}
+  - {t: N, h: momentary_numpad}
   - M
   - ','
   - .
@@ -118,7 +118,7 @@ layers:
   - END
   - ESC
   - _
-  - FUNCTION
+  - fun
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -127,7 +127,7 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - CAPS
-  - {t: RMPTPT, h: sticky}
+  - {t: rak, h: sticky}
   - {t: ▽, type: trans}
   - {type: held}
   - RET
@@ -135,7 +135,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  FUNCTION:
+  fun:
   - ''
   - ''
   - ''
@@ -180,7 +180,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  RMPTPT:
+  rak:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&shHmF3'
@@ -225,7 +225,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  momNUM:
+  momentary_numpad:
   - ''
   - ''
   - ''
@@ -270,7 +270,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  togNUM:
+  toggle_numpad:
   - ''
   - ''
   - ''
@@ -326,7 +326,7 @@ layers:
   - '8'
   - '9'
   - '-'
-  - {t: togNUM, h: toggle}
+  - {t: toggle_numpad, h: toggle}
   - ''
   - LEFT
   - UP

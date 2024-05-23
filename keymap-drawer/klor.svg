@@ -243,7 +243,7 @@ path.combo {
 <g transform="translate(637, 176)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">N</text>
-<text x="0" y="24" class="key hold">momNUM</text>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 60%">momentary_numpad</tspan></text>
 </g>
 <g transform="translate(693, 167)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -577,7 +577,7 @@ path.combo {
 </g>
 <g transform="translate(317, 176)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 88%">FUNCTION</tspan></text>
+<text x="0" y="0" class="key tap">fun</text>
 </g>
 <g transform="translate(390, 195)" class="key trans keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -612,7 +612,7 @@ path.combo {
 </g>
 <g transform="translate(252, 231)" class="key keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">RMPTPT</text>
+<text x="0" y="0" class="key tap">rak</text>
 <text x="0" y="24" class="key hold">sticky</text>
 </g>
 <g transform="translate(314, 240) rotate(15.0)" class="key trans keypos-37">
@@ -644,8 +644,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1196)" class="layer-FUNCTION">
-<text x="0" y="28" class="label">FUNCTION:</text>
+<g transform="translate(30, 1196)" class="layer-fun">
+<text x="0" y="28" class="label">fun:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(76, 101) rotate(-10.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -830,8 +830,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1594)" class="layer-RMPTPT">
-<text x="0" y="28" class="label">RMPTPT:</text>
+<g transform="translate(30, 1594)" class="layer-rak">
+<text x="0" y="28" class="label">rak:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(76, 101) rotate(-10.0)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1009,8 +1009,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1993)" class="layer-momNUM">
-<text x="0" y="28" class="label">momNUM:</text>
+<g transform="translate(30, 1993)" class="layer-momentary_numpad">
+<text x="0" y="28" class="label">momentary_numpad:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(76, 101) rotate(-10.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1154,8 +1154,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 2391)" class="layer-togNUM">
-<text x="0" y="28" class="label">togNUM:</text>
+<g transform="translate(30, 2391)" class="layer-toggle_numpad">
+<text x="0" y="28" class="label">toggle_numpad:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(76, 101) rotate(-10.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1347,7 +1347,7 @@ path.combo {
 </g>
 <g transform="translate(28, 152) rotate(-10.0)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">togNUM</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 60%">toggle_numpad</tspan></text>
 <text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(86, 157) rotate(-10.0)" class="key keypos-11">
