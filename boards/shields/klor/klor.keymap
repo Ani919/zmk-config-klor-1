@@ -25,6 +25,7 @@
 };
 
 
+
 // DO NOT MAKE LAYER LABELS LARGER
 
 / {
@@ -43,8 +44,15 @@
             bindings = <&kp SLASH>, <&kp BACKSLASH>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
-    };
+		        num_word: behavior_num_word {
+			compatible = "zmk,behavior-caps-word";
+			label = "NUM_WORD";
+			#binding-cells = <0>;
+                        layers = <2>;                                // insert location of numbers layer here
+			continue-list = <BACKSPACE DELETE DOT COMMA>;  // adjust as desired
+                        ignore-numbers;                                // numbers don't deactivate the layer
+		};
+	};
 
 macros {
         shHmF3: shHmF3 {
@@ -108,7 +116,7 @@ display-name = "QWERTY"                                       ;
   
     sym {
             display-name = "SYMBOL";
-label= "RAISE / 1"                                                 ;
+label= "RAISE / 1" ;
  bindings = <
           &none         &none      &none     &none      &none                           &kp GRAVE   &none       &none      &none        &none
 &trans    &kp LBRC      &kp LPAR   &kp RPAR  &kp RBRC   &none                           &kp CARET   &kp LEFT    &kp UP     &kp RIGHT    &none      &trans
@@ -131,7 +139,7 @@ bindings = <
                 };
 
     fun {
-            display-name = "FUNCTION";
+            display-name = "FUNCTION";label= "3" ;
             bindings = <
         &none    &none    &none    &bt BT_SEL 0  &bt BT_SEL 1                                &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans  &trans
 &trans  &kp F1   &kp F2   &kp F3   &kp F4        &kp F5                                      &kp F6        &kp F7        &kp F8  &kp F9  &kp F10  &trans
@@ -143,7 +151,7 @@ bindings = <
 
 
     rak {
-            display-name = "RMPTPT";
+            display-name = "RMPTPT";label= "4" ;
             bindings = <
         &trans   &trans   &shHmF3   &trans  &trans                             &trans  &trans  &soft_off &trans  &trans  
 &trans  &trans   &trans   &trans   &trans   &trans                             &trans  &trans  &trans    &trans  &trans  &trans
@@ -155,7 +163,7 @@ bindings = <
 
 
     momentary_numpad {
- display-name = "momNUM";
+ display-name = "momNUM";label= "5" ;
 //          This layer only exists as a workaround to trigger the num layer through two mechanisms, &mo and &tog / &kt
 //          The real magic for it happens in conditional layers
             bindings = < 
@@ -168,7 +176,7 @@ bindings = <
         };
     
     toggle_numpad {
- display-name = "togNUM";
+ display-name = "togNUM";label= "6" ;
 //          This layer only exists as a workaround to trigger the num layer through two mechanisms, &mo and &tog / &kt
 //          The real magic for it happens in conditional layers
             bindings = < 
@@ -181,7 +189,7 @@ bindings = <
         };
 
     numpad {
-            display-name = "numpad";
+            display-name = "numpad";label= "7" ;
             bindings = <
              &kp TILDE &none       &kp PG_UP  &kp PG_DN    &kp HOME                                 &kp N0     &kp N7  &kp N8  &kp N9 &kp MINUS
 &tog 6       &none     &kp LEFT    &kp UP     &kp RIGHT    &kp END                                  &kp COLON  &kp N4  &kp N5  &kp N6 &kp PLUS  &kp STAR
@@ -194,7 +202,7 @@ bindings = <
     
     spSYM {
          display-name = "spSYM";
-            label= "sp sym 8"                    ;
+            label= "sp sym 8";
             bindings = < 
           &kp HOME      &kp END    &kp ESC    &kp DEL   &kp BSPC                      &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG   &none    &none  
 &none     &kp CARET     &kp AMPS   &kp STAR   &kp LPAR  &kp RPAR                        &out OUT_BLE   &out OUT_USB      &out OUT_TOG        &none    &none    &none  
