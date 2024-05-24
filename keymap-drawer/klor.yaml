@@ -33,7 +33,7 @@ layers:
   - PLAY PAUSE
   - {t: N, h: momentary_numpad}
   - M
-  - {t: ., h: ','}
+  - {t: ',', h: .}
   - .
   - {t: /, h: RSHIFT}
   - \
