@@ -453,6 +453,7 @@ layers:
 combos:
 - p: [0, 1]
   k: ESC
+  l: [QWERTY]
 - p: [6, 7]
   k: F2
 - p: [7, 8]
