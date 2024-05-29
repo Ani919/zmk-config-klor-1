@@ -23,8 +23,8 @@ layers:
   - L
   - ;
   - ''''
-  - LSHFT
-  - {t: Z, h: LGUI}
+  - {t: CAPS, h: LGUI}
+  - {t: Z, h: LSHFT}
   - X
   - C
   - V
@@ -453,10 +453,6 @@ layers:
 combos:
 - p: [0, 1]
   k: ESC
-- p: [12, 13]
-  k: Ctl+ C
-- p: [13, 14]
-  k: Ctl+ V
 - p: [6, 7]
   k: F2
 - p: [7, 8]
