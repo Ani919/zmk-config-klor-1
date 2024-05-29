@@ -456,5 +456,7 @@ combos:
   l: [QWERTY]
 - p: [6, 7]
   k: F2
+  l: [QWERTY]
 - p: [7, 8]
   k: F4
+  l: [QWERTY]
